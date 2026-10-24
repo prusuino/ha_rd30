@@ -1,0 +1,5 @@
+{
+  "name": "RD30 Digital Interface (AK MODUL-BUS)",
+  "render_readme": true,
+  "homeassistant": "2025.4.0"
+}

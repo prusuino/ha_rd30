@@ -1,0 +1,91 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "RD30 Digital Interface",
+        "description": "Connect to an RD30 behind a serial device server such as a Moxa NPort (TCP server mode, 9600 8N1, data packing off). The device is asked for its identity (command 1, reply 30) before the entry is created.",
+        "data": {
+          "host": "Host",
+          "port": "TCP port"
+        },
+        "data_description": {
+          "host": "Host name or IP address of the serial device server.",
+          "port": "TCP port of the serial device server (4001 on a Moxa NPort by default)."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Connection failed",
+      "no_identify": "The device did not answer the identity request (expected 30). Check the serial settings (9600 8N1), the crossed cable and data packing."
+    },
+    "abort": {
+      "already_configured": "This device is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configure inputs",
+        "description": "Pick the input to name. Named inputs are enabled automatically; inputs without a name are created disabled and show up as “Input n”.",
+        "data": {
+          "input": "Input"
+        }
+      },
+      "input": {
+        "title": "Input {number}",
+        "description": "Name and device class of input {number}. Leave the name empty or tick “Reset” to remove the settings again.",
+        "data": {
+          "name": "Name",
+          "device_class": "Device class",
+          "reset": "Reset this input (remove name and device class)"
+        },
+        "data_description": {
+          "name": "Shown as the entity name, e.g. “Water leak utility room”.",
+          "device_class": "Controls the icon and the on/off wording in Home Assistant."
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "connection": {
+        "name": "Connection"
+      },
+      "input": {
+        "name": "Input {number}"
+      }
+    }
+  },
+  "selector": {
+    "device_class": {
+      "options": {
+        "none": "None",
+        "battery": "Battery",
+        "cold": "Cold",
+        "connectivity": "Connectivity",
+        "door": "Door",
+        "garage_door": "Garage door",
+        "gas": "Gas",
+        "heat": "Heat",
+        "light": "Light",
+        "lock": "Lock",
+        "moisture": "Moisture",
+        "motion": "Motion",
+        "moving": "Moving",
+        "occupancy": "Occupancy",
+        "opening": "Opening",
+        "plug": "Plug",
+        "power": "Power",
+        "presence": "Presence",
+        "problem": "Problem",
+        "running": "Running",
+        "safety": "Safety",
+        "smoke": "Smoke",
+        "sound": "Sound",
+        "tamper": "Tamper",
+        "vibration": "Vibration",
+        "window": "Window"
+      }
+    }
+  }
+}

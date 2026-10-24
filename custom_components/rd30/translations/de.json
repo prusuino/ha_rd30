@@ -1,0 +1,91 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "RD30 Digitalinterface",
+        "description": "Verbindung zu einem RD30 hinter einem seriellen Geräteserver wie dem Moxa NPort (TCP-Server-Modus, 9600 8N1, Data Packing aus). Vor dem Anlegen wird das Gerät nach seiner Kennung gefragt (Befehl 1, Antwort 30).",
+        "data": {
+          "host": "Host",
+          "port": "TCP-Port"
+        },
+        "data_description": {
+          "host": "Hostname oder IP-Adresse des seriellen Geräteservers.",
+          "port": "TCP-Port des Geräteservers (beim Moxa NPort standardmässig 4001)."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung fehlgeschlagen",
+      "no_identify": "Das Gerät antwortet nicht auf die Kennungsabfrage (erwartet 30). Serielle Einstellungen (9600 8N1), gekreuztes Kabel und Data Packing prüfen."
+    },
+    "abort": {
+      "already_configured": "Dieses Gerät ist bereits eingerichtet"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Eingänge konfigurieren",
+        "description": "Eingang auswählen, der benannt werden soll. Benannte Eingänge werden automatisch aktiviert; Eingänge ohne Namen sind deaktiviert angelegt und heissen „Eingang n“.",
+        "data": {
+          "input": "Eingang"
+        }
+      },
+      "input": {
+        "title": "Eingang {number}",
+        "description": "Name und Geräteklasse von Eingang {number}. Namen leer lassen oder „Zurücksetzen“ anhaken, um die Einstellungen wieder zu entfernen.",
+        "data": {
+          "name": "Name",
+          "device_class": "Geräteklasse",
+          "reset": "Diesen Eingang zurücksetzen (Name und Geräteklasse entfernen)"
+        },
+        "data_description": {
+          "name": "Wird als Entitätsname angezeigt, z. B. „Wassermelder Technik“.",
+          "device_class": "Bestimmt Symbol und Ein/Aus-Beschriftung in Home Assistant."
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "connection": {
+        "name": "Verbindung"
+      },
+      "input": {
+        "name": "Eingang {number}"
+      }
+    }
+  },
+  "selector": {
+    "device_class": {
+      "options": {
+        "none": "Keine",
+        "battery": "Batterie",
+        "cold": "Kälte",
+        "connectivity": "Verbindung",
+        "door": "Tür",
+        "garage_door": "Garagentor",
+        "gas": "Gas",
+        "heat": "Hitze",
+        "light": "Licht",
+        "lock": "Schloss",
+        "moisture": "Feuchtigkeit",
+        "motion": "Bewegung",
+        "moving": "In Bewegung",
+        "occupancy": "Belegung",
+        "opening": "Öffnung",
+        "plug": "Stecker",
+        "power": "Strom",
+        "presence": "Anwesenheit",
+        "problem": "Problem",
+        "running": "In Betrieb",
+        "safety": "Sicherheit",
+        "smoke": "Rauch",
+        "sound": "Geräusch",
+        "tamper": "Manipulation",
+        "vibration": "Vibration",
+        "window": "Fenster"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+  * { margin:0; padding:0; }
+  body { width:1280px; height:640px; overflow:hidden;
+    font-family:"Liberation Sans", Arial, sans-serif;
+    background:
+      radial-gradient(900px 700px at 85% -10%, rgba(34,197,94,.16), transparent 60%),
+      radial-gradient(900px 700px at 0% 110%, rgba(61,70,84,.5), transparent 60%),
+      #0B0D12;
+    display:flex; align-items:center; }
+  .icon { width:340px; height:340px; margin-left:84px; flex:none;
+    filter: drop-shadow(0 24px 60px rgba(0,0,0,.65)); }
+  .text { margin-left:58px; width:730px; }
+  .eyebrow { color:#8BD5A5; font-weight:bold; font-size:24px; letter-spacing:3px; margin-bottom:18px; }
+  h1 { color:#fff; white-space:nowrap; font-size:58px; font-weight:bold; letter-spacing:-1px; margin-bottom:16px; }
+  .sub { color:#C9CFDA; font-size:25px; line-height:1.35; max-width:660px; margin-bottom:28px; }
+  .card { background:#1E1E1E; border:1px solid #2E2E2E; border-radius:10px; width:560px;
+    color:#fff; box-shadow:0 18px 50px rgba(0,0,0,.55); padding:18px 22px 8px; }
+  .card .head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px; }
+  .card .station { font-size:22px; font-weight:bold; }
+  .card .type { font-size:12px; font-weight:bold; letter-spacing:1.5px; color:#9E9E9E; }
+  .row { display:flex; align-items:center; padding:12px 0; border-top:1px solid #262626; font-size:18px; }
+  .dot { width:12px; height:12px; border-radius:50%; margin-right:14px; flex:none; }
+  .on  { background:#22C55E; box-shadow:0 0 8px rgba(34,197,94,.7); }
+  .off { background:#4A4A4A; }
+  .name { flex:1; }
+  .state { color:#9E9E9E; font-size:16px; }
+  .state.s-on { color:#22C55E; font-weight:bold; }
+</style></head>
+<body>
+  <img class="icon" src="rd30_icon.svg">
+  <div class="text">
+    <div class="eyebrow">HOME ASSISTANT CUSTOM INTEGRATION</div>
+    <h1>AK Modul-Bus RD30</h1>
+    <div class="sub">30 digital contact inputs as binary sensors — straight from the RD30 interface to your dashboard.</div>
+    <div class="card">
+      <div class="head"><span class="station">RD30 Digital Interface</span><span class="type">BINARY SENSORS</span></div>
+      <div class="row" style="border-top:none"><span class="dot on"></span><span class="name">Input 03 · Türkontakt</span><span class="state s-on">On</span></div>
+      <div class="row"><span class="dot off"></span><span class="name">Input 17 · Fensterkontakt</span><span class="state">Off</span></div>
+      <div class="row"><span class="dot on"></span><span class="name">Input 24 · Klingeltaster</span><span class="state s-on">On</span></div>
+    </div>
+  </div>
+</body></html>

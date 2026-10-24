@@ -1,0 +1,91 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Interface numérique RD30",
+        "description": "Connexion à un RD30 derrière un serveur de port série tel qu'un Moxa NPort (mode serveur TCP, 9600 8N1, data packing désactivé). Avant la création de l'entrée, l'appareil est interrogé sur son identité (commande 1, réponse 30).",
+        "data": {
+          "host": "Hôte",
+          "port": "Port TCP"
+        },
+        "data_description": {
+          "host": "Nom d'hôte ou adresse IP du serveur de port série.",
+          "port": "Port TCP du serveur de port série (4001 par défaut sur un Moxa NPort)."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Échec de la connexion",
+      "no_identify": "L'appareil ne répond pas à la demande d'identité (30 attendu). Vérifiez les réglages série (9600 8N1), le câble croisé et le data packing."
+    },
+    "abort": {
+      "already_configured": "Cet appareil est déjà configuré"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configurer les entrées",
+        "description": "Choisissez l'entrée à nommer. Les entrées nommées sont activées automatiquement ; les entrées sans nom sont créées désactivées et s'appellent « Entrée n ».",
+        "data": {
+          "input": "Entrée"
+        }
+      },
+      "input": {
+        "title": "Entrée {number}",
+        "description": "Nom et classe d'appareil de l'entrée {number}. Laissez le nom vide ou cochez « Réinitialiser » pour supprimer les réglages.",
+        "data": {
+          "name": "Nom",
+          "device_class": "Classe d'appareil",
+          "reset": "Réinitialiser cette entrée (supprimer nom et classe d'appareil)"
+        },
+        "data_description": {
+          "name": "Affiché comme nom de l'entité, p. ex. « Détecteur d'eau local technique ».",
+          "device_class": "Détermine l'icône et le libellé marche/arrêt dans Home Assistant."
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "connection": {
+        "name": "Connexion"
+      },
+      "input": {
+        "name": "Entrée {number}"
+      }
+    }
+  },
+  "selector": {
+    "device_class": {
+      "options": {
+        "none": "Aucune",
+        "battery": "Batterie",
+        "cold": "Froid",
+        "connectivity": "Connectivité",
+        "door": "Porte",
+        "garage_door": "Porte de garage",
+        "gas": "Gaz",
+        "heat": "Chaleur",
+        "light": "Lumière",
+        "lock": "Serrure",
+        "moisture": "Humidité",
+        "motion": "Mouvement",
+        "moving": "En déplacement",
+        "occupancy": "Occupation",
+        "opening": "Ouverture",
+        "plug": "Prise",
+        "power": "Alimentation",
+        "presence": "Présence",
+        "problem": "Problème",
+        "running": "En marche",
+        "safety": "Sécurité",
+        "smoke": "Fumée",
+        "sound": "Son",
+        "tamper": "Sabotage",
+        "vibration": "Vibration",
+        "window": "Fenêtre"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "domain": "rd30",
+  "name": "RD30 Digital Interface (AK MODUL-BUS)",
+  "codeowners": ["@prusuino"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/prusuino/ha_rd30",
+  "integration_type": "hub",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/prusuino/ha_rd30/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

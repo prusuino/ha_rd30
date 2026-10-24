@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- Kachel -->
+  <rect width="256" height="256" rx="56" fill="#171B22"/>
+
+  <!-- Klemmenblöcke oben -->
+  <g fill="#3D4654">
+    <rect x="58" y="42" width="20" height="18" rx="3"/>
+    <rect x="86" y="42" width="20" height="18" rx="3"/>
+    <rect x="114" y="42" width="20" height="18" rx="3"/>
+    <rect x="142" y="42" width="20" height="18" rx="3"/>
+    <rect x="170" y="42" width="20" height="18" rx="3"/>
+  </g>
+
+  <!-- Modulgehäuse -->
+  <rect x="44" y="60" width="168" height="118" rx="14" fill="#FFFFFF"/>
+
+  <!-- Digitalsignal (Rechtecksignal) -->
+  <path d="M60 132 L84 132 L84 96 L112 96 L112 132 L140 132 L140 96 L168 96 L168 132 L196 132"
+        fill="none" stroke="#22C55E" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Status-LEDs -->
+  <circle cx="66" cy="160" r="6.5" fill="#22C55E"/>
+  <circle cx="88" cy="160" r="6.5" fill="#22C55E"/>
+  <circle cx="110" cy="160" r="6.5" fill="#3D4654"/>
+  <circle cx="132" cy="160" r="6.5" fill="#22C55E"/>
+  <circle cx="154" cy="160" r="6.5" fill="#3D4654"/>
+  <circle cx="176" cy="160" r="6.5" fill="#F7A600"/>
+
+  <!-- Klemmenblöcke unten -->
+  <g fill="#3D4654">
+    <rect x="58" y="178" width="20" height="18" rx="3"/>
+    <rect x="86" y="178" width="20" height="18" rx="3"/>
+    <rect x="114" y="178" width="20" height="18" rx="3"/>
+    <rect x="142" y="178" width="20" height="18" rx="3"/>
+    <rect x="170" y="178" width="20" height="18" rx="3"/>
+  </g>
+
+  <!-- Anschlusskabel unten (Bus) -->
+  <g stroke="#3D4654" stroke-width="8" stroke-linecap="round">
+    <line x1="80" y1="216" x2="108" y2="216"/>
+    <line x1="122" y1="216" x2="176" y2="216"/>
+  </g>
+</svg>

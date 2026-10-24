@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="150" viewBox="0 0 860 150">
+  <g transform="translate(10,10)">
+    <rect width="130" height="130" rx="30" fill="#171B22"/>
+    <g fill="#3D4654">
+      <rect x="31" y="23" width="11" height="10" rx="2"/><rect x="46" y="23" width="11" height="10" rx="2"/>
+      <rect x="61" y="23" width="11" height="10" rx="2"/><rect x="76" y="23" width="11" height="10" rx="2"/>
+      <rect x="91" y="23" width="11" height="10" rx="2"/>
+    </g>
+    <rect x="24" y="33" width="85" height="60" rx="8" fill="#FFFFFF"/>
+    <path d="M32 70 L44 70 L44 51 L58 51 L58 70 L72 70 L72 51 L86 51 L86 70 L100 70"
+          fill="none" stroke="#22C55E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="35" cy="84" r="3.4" fill="#22C55E"/><circle cx="47" cy="84" r="3.4" fill="#22C55E"/>
+    <circle cx="59" cy="84" r="3.4" fill="#3D4654"/><circle cx="71" cy="84" r="3.4" fill="#22C55E"/>
+    <circle cx="83" cy="84" r="3.4" fill="#3D4654"/><circle cx="95" cy="84" r="3.4" fill="#F7A600"/>
+    <g fill="#3D4654">
+      <rect x="31" y="93" width="11" height="10" rx="2"/><rect x="46" y="93" width="11" height="10" rx="2"/>
+      <rect x="61" y="93" width="11" height="10" rx="2"/><rect x="76" y="93" width="11" height="10" rx="2"/>
+      <rect x="91" y="93" width="11" height="10" rx="2"/>
+    </g>
+    <g stroke="#3D4654" stroke-width="4" stroke-linecap="round">
+      <line x1="42" y1="112" x2="58" y2="112"/><line x1="66" y1="112" x2="92" y2="112"/>
+    </g>
+  </g>
+  <text x="170" y="83" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="60" font-weight="bold" fill="#FFFFFF">AK Modul-Bus RD30</text>
+  <text x="172" y="122" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="24" letter-spacing="3" fill="#8FA0BF">HOME ASSISTANT INTEGRATION</text>
+</svg>
