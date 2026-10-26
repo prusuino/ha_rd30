@@ -1,5 +1,7 @@
 {
   "name": "RD30 Digital Interface (AK MODUL-BUS)",
+  "zip_release": true,
+  "filename": "rd30.zip",
   "render_readme": true,
   "homeassistant": "2025.4.0"
 }
