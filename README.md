@@ -1,4 +1,4 @@
-<img src="assets/rd30_readme_header_1280x320.png" alt="AK Modul-Bus RD30 — Home Assistant Integration" width="100%">
+<img src="https://raw.githubusercontent.com/prusuino/ha_rd30/main/assets/rd30_readme_header_1280x320.png" alt="AK Modul-Bus RD30 — Home Assistant Integration" width="100%">
 
 # RD30 Digital Interface for Home Assistant
 
