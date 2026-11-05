@@ -2,7 +2,7 @@
 
 # RD30 Digital Interface for Home Assistant
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+[![marketplace_badge](https://img.shields.io/badge/Marketplace-Custom-41BDF5.svg)](https://hacs.xyz/docs/marketplace/)
 [![Validate](https://github.com/prusuino/ha_rd30/actions/workflows/validate.yml/badge.svg)](https://github.com/prusuino/ha_rd30/actions/workflows/validate.yml)
 
 Reads the 30 digital contact inputs of an **AK MODUL-BUS RD30** module into
@@ -84,19 +84,19 @@ Configure the serial device server before you add the integration:
 
 ## Installation
 
-### HACS (custom repository)
+### Home Assistant Marketplace (custom repository)
 
-The integration is not in the HACS default store, so add it once as a
+The integration is not in the Marketplace default catalog, so add it once as a
 custom repository:
 
-1. Click the button — it opens HACS on your instance with this repository
+1. Click the button — it opens the Marketplace (HACS before Home Assistant 2026.11) on your instance with this repository
    pre-filled — and confirm **Add**:
 
-   [![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=prusuino&repository=ha_rd30&category=integration)
+   [![Open in Marketplace](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=prusuino&repository=ha_rd30&category=integration)
 
-   Without the button: HACS → three-dot menu → **Custom repositories** →
+   Without the button: Settings → Marketplace → three-dot menu → **Custom repositories** →
    `https://github.com/prusuino/ha_rd30`, type **Integration** → **Add**.
-2. Open **RD30 Digital Interface** in HACS and click **Download**.
+2. Open **RD30 Digital Interface** in the Marketplace and click **Download**.
 3. Restart Home Assistant.
 
 ### Manual
