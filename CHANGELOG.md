@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 — 2026-11-06
+
+- **Fixed: the diagnostics download contained private values.** Host, port and the names given to the inputs are now redacted, and an address in the last error text is masked. An input name can tell what a building's alarm system watches. If you have shared a diagnostics file from 1.0.0, consider these values exposed.
+
 ## 1.0.0 — 2026-10-24
 
 First public release.

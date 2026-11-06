@@ -52,8 +52,8 @@ and it has no serial-port mode of its own.
 - Diagnostic connectivity entity with connect/disconnect timestamps, a
   reconnect counter, the last error text and a counter for bytes the
   protocol does not know
-- Downloadable diagnostics with the link history, all raw input states and
-  the configured names
+- Downloadable diagnostics with the link history and all raw input states;
+  host, port and input names are redacted
 - English, German, French and Italian
 
 ## Device server settings
