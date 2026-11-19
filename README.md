@@ -121,6 +121,13 @@ choose a device class (door, window, moisture, running, …). The entity is
 enabled and renamed right away. Tick **Reset** to remove the settings again;
 the entity then falls back to *Input n*.
 
+## Removal
+
+**Settings → Devices & Services → RD30 Digital Interface → ⋮ → Delete.** The device and its 31 entities are
+removed with the entry. The integration stores nothing outside Home Assistant, and the serial device server keeps
+its settings. To remove the files as well, uninstall the integration in the Marketplace (or delete
+`custom_components/rd30`) and restart Home Assistant.
+
 ## Entities
 
 | Entity | Type | Notes |

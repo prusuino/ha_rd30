@@ -1,0 +1,98 @@
+rules:
+  # Bronze
+  action-setup:
+    status: exempt
+    comment: The integration has no actions.
+  appropriate-polling:
+    status: exempt
+    comment: Local push. The module reports every change; a full sync every 60 seconds only heals a lost event.
+  brands: done
+  common-modules:
+    status: done
+    comment: hub.py holds the TCP client and the protocol; there is one platform.
+  config-flow: done
+  config-flow-test-coverage: todo
+  dependency-transparency:
+    status: done
+    comment: No requirements; the protocol runs on asyncio streams.
+  docs-actions:
+    status: exempt
+    comment: No actions.
+  docs-high-level-description: done
+  docs-installation-instructions: done
+  docs-removal-instructions: done
+  entity-event-setup: done
+  entity-unique-id: done
+  has-entity-name: done
+  runtime-data:
+    status: done
+    comment: The hub is entry.runtime_data.
+  test-before-configure:
+    status: done
+    comment: The flow sends the identity command and creates the entry only when the module answers.
+  test-before-setup:
+    status: todo
+    comment: The entry loads while the module is unreachable; the entities are unavailable until the link is up, and the hub keeps reconnecting.
+  unique-config-entry: done
+
+  # Silver
+  action-exceptions:
+    status: exempt
+    comment: No actions.
+  config-entry-unloading: done
+  docs-configuration-parameters: done
+  docs-installation-parameters: done
+  entity-unavailable: done
+  integration-owner: done
+  log-when-unavailable:
+    status: todo
+    comment: A lost connection is logged at every failed attempt, not once.
+  parallel-updates: todo
+  reauthentication-flow:
+    status: exempt
+    comment: The serial device server takes no credentials.
+  test-coverage: todo
+
+  # Gold
+  devices: done
+  diagnostics: done
+  discovery:
+    status: exempt
+    comment: The module sits behind a serial device server of any make and has nothing of its own to discover.
+  discovery-update-info:
+    status: exempt
+    comment: No discovery.
+  docs-data-update: done
+  docs-examples: todo
+  docs-known-limitations: todo
+  docs-supported-devices: done
+  docs-supported-functions: done
+  docs-troubleshooting: todo
+  docs-use-cases: todo
+  dynamic-devices:
+    status: exempt
+    comment: One module with a fixed set of 30 inputs.
+  entity-category: done
+  entity-device-class: done
+  entity-disabled-by-default:
+    status: done
+    comment: Inputs without a name start disabled.
+  entity-translations: done
+  exception-translations:
+    status: exempt
+    comment: The integration raises no exceptions towards the user.
+  icon-translations: todo
+  reconfiguration-flow: todo
+  repair-issues: todo
+  stale-devices:
+    status: exempt
+    comment: One fixed device per entry.
+
+  # Platinum
+  async-dependency:
+    status: done
+    comment: No library; asyncio streams.
+  inject-websession:
+    status: exempt
+    comment: No HTTP.
+  strict-typing: todo
