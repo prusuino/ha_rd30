@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2 — 2026-11-19
+
+- The Home Assistant Marketplace lists the integration under *Hubs & protocols → Building automation* and *Sensors → Door & window*. Nothing changes in how the integration works.
+
 ## 1.0.1 — 2026-11-06
 
 - **Fixed: the diagnostics download contained private values.** Host, port and the names given to the inputs are now redacted, and an address in the last error text is masked. An input name can tell what a building's alarm system watches. If you have shared a diagnostics file from 1.0.0, consider these values exposed.
